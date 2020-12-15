@@ -5,15 +5,27 @@ class qa_qnumbering_admin {
 
 		switch($option) {
 			case 'qnumbering_plugin_css':
-				return '.qa-question-list-count {
-					position: absolute;
-					top: 0px;
-					right: 0px;
-					background: var(--primary);
-					color: var(--on-primary);
-					padding: 5px 7px;
-					border-radius: 0px 4px 0px 4px;
-				}';
+				return '/* Style for QNumbering Plugin LTR */
+.qa-question-list-count {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: var(--primary);
+	color: var(--on-primary);
+	padding: 5px 7px;
+	border-radius: 0px 4px 0px 4px;
+}
+
+/* Style for QNumbering Plugin RTL */
+/* .qa-question-list-count {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: var(--primary);
+	color: var(--on-primary);
+	padding: 5px 7px;
+	border-radius: 4px 0px 4px 0px;
+} */';
 			default:
 				return null;				
 		}
